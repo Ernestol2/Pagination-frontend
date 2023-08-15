@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Products component */
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .card-body {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
+
+/* Pagination Component */
+
+.pagination li button {
+    color: black !important;
+}
+
+.active>.page-link {
+    background-color: #77797a !important;
+    border: #77797a;
+}
+
+.pagination li button:hover {
+    background-color:#77797a!important ;
+}
+
+/* FILTER COMPONENT - CARD */
+
+.container .filtered-card .card-body {
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+/* MEDIA QUERYS */
+
+@media only screen and (max-width: 600px) {
+    .pagination .page-numbers {
+        display: none;
+    }
+    
+}
