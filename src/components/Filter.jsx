@@ -15,7 +15,7 @@ export default function Filter() {
   
   useEffect(() => {
     const getProducts = () => {
-      const URL = 'http://localhost:3001/api/all-products'
+      const URL = 'https://crud-backend-pagination.onrender.com/api/all-products'
       fetch(URL).then(res=> res.json()).then(data=>{ 
         setProducts(data)
 

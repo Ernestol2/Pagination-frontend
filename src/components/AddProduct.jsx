@@ -12,7 +12,7 @@ export default function AddProduct() {
         e.preventDefault();
 
         try {
-            const URL = "http://localhost:3001/api/add-product/";
+            const URL = "https://crud-backend-pagination.onrender.com/api/add-product/";
             const response = await axios.post(URL, {
                 category,
                 name,

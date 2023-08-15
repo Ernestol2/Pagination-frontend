@@ -12,7 +12,7 @@ export default function Products() {
   const [pages, setPages] = useState(0);
 
   const fetchProducts = (page) => {
-    const URL = `http://localhost:3001/api/products/${page}`;
+    const URL = `https://crud-backend-pagination.onrender.com/api/products/${page}`;
     axios
       .get(URL)
       .then((response) => {
@@ -24,7 +24,7 @@ export default function Products() {
   };
 
   const deleteProduct = async (productId) => {
-    const URL = `http://localhost:3001/api/products/${productId}`;
+    const URL = `https://crud-backend-pagination.onrender.com/api/products/${productId}`;
 
     try {
       const response = await axios.delete(URL);

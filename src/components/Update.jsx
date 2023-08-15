@@ -13,7 +13,7 @@ export default function Update() {
 
     useEffect(() => {
         const fetchProduct = async () => {
-            const url = `http://localhost:3001/api/product/${productId}`
+            const url = `https://crud-backend-pagination.onrender.com/api/product/${productId}`
             try {
                 const response = await axios.get(url)
                 setCategory(response.data.category)
@@ -31,7 +31,7 @@ export default function Update() {
     const handleUpdate = async (e) => {
 
         e.preventDefault();
-        const url = `http://localhost:3001/api/update/product/${productId}`
+        const url = `https://crud-backend-pagination.onrender.com/api/update/product/${productId}`
 
         const updatedProduct = {
             category: category,
